@@ -12,6 +12,7 @@ data/session/
 composer.lock
 gitpush.sh
 pkg/
+log/
 bin/
 cbuild
 */.DS_Store

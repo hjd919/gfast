@@ -1,10 +1,10 @@
 # 数据库连接
 [database]
     type    =   "mysql"
-    host    =   "192.168.0.212"
-    port    =   "3306"
-    user    =   "devuser"
-    pass    =   "123456"
+    host    =   "101.200.41.141"
+    port    =   "7306"
+    user    =   "root"
+    pass    =   "Yisai726"
     name    =   "gfast"
     charset   = "utf8mb4" #数据库编码
     maxIdle      = "10" #连接池最大闲置的连接数
@@ -19,7 +19,7 @@
     AccessLogEnabled = true
     ErrorLogEnabled  = true
     PProfEnabled     = true
-    LogPath          = "./data/log/server_log"
+    LogPath          = "./log/server_log"
     SessionIdName    = "sysSessionId"
     SessionPath      = "./data/session"
     SessionMaxAge    = "24h"
@@ -29,7 +29,7 @@
 
 # Redis数据库配置
 [redis]
-    default = "127.0.0.1:6379,1"
+    default = "101.200.41.141:7379,0,Yisai726?maxIdle=100&maxActive=2000&idleTimeout=600"
 
 #jwt配置
 [gToken]
@@ -44,7 +44,7 @@
 
 #单例日志配置 g.Log(单例名称)获取Logger单例对象时
 [logger]
-    path   = "./data/log/run_log"
+    path   = "./log/run_log"
     level  = "all"
     stdout = true
 
