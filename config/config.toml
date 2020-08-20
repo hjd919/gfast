@@ -14,7 +14,7 @@
 
 #web服务器配置
 [server]
-    Address          = ":8200"
+    Address          = ":8100"
     ServerRoot       = "./public/resource"
     AccessLogEnabled = true
     ErrorLogEnabled  = true
